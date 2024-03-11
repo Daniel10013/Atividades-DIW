@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* classes uteis */
+html{
+    & .submitButton{
+        padding: 2px 30px;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: transparent;
+        border: solid 2px black;
+        border-radius: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    & .submitButton:hover{
+        transition: 0.3s;
+        background-color: black;
+        color: white;
+    }
+}
+
+body{
+    display: flex;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 5px rgb(197, 197, 197);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: +1000;
+    background-color: white;
+    justify-content: space-between;
+
+    & img {
+        height: 100px;
+    }
+
+    & h1{
+        margin-left: 200px;
+    }
+
+    & div {
+        position: relative;
+        right: 50px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        & a {
+            margin-top: 10px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding-bottom: 10px;
+            border-bottom: solid transparent 2px;
+            transition: 0.3s;
+        }
+
+        & a:hover {
+            border-bottom: solid black 2px;
+            transition: 0.3s;
+        }
+
+        & button {
+            padding: 2px 30px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            background-color: transparent;
+            border: solid 2px black;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        & button:hover {
+            transition: 0.3s;
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+aside{
+    margin-top: 100px;
+    width: 20%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    & section{ 
+        box-shadow: 2px 1px 4px rgb(199, 199, 199);
+        background-color: #eeeeee;
+        border-radius: 20px;
+        width: 70%;
+        padding: 10px 0px 20px 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        & h1{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        & div{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+
+            & a{
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                padding: 8px 0 8px 0;
+                color: black;
+                text-decoration: none;
+            }
+
+            & a:hover{
+                transition: 0.3s;
+                background-color: rgb(209, 209, 209);
+            }
+        }
+    }
+
+    & .newsletter-form{
+        width: 90%;
+        padding: 10px 20px 20px 20px;
+
+        & h1{
+            margin-bottom: unset;
+        }
+
+        & h2{
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        & input{
+            width: 100%;
+            border-radius: 20px;
+            outline: none;
+            padding: 6px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: transparent solid 2px;
+            transition: 0.2s;
+        }
+
+        & input:focus{
+            transition: 0.2s;
+            border-color: black;
+        }
+
+        & input::placeholder{
+            font-size: 16px;
+        }
+
+        & .submitButton{
+            width: 100%;
+        }
+    }
+}
+
+main{
+    margin-top: 100px;
+    width: 80%;
+
+    padding: 25px;
+
+    & input{
+        margin-top: 5px;
+        width: 70%;
+        padding: 6px;
+        font-size: 22px;
+        border-radius: 25px;
+    }
+
+    & button{
+        position: relative;
+        left: -50px;
+        top: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    & button img{
+        height: 27px;
+    }
+
+    & section{
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 130px;
+
+        & .product-card{
+            width: 18%;
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-decoration: unset;
+            box-shadow: 2px 1px 4px rgb(107, 107, 107);
+            
+            & div{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: white;
+                position: relative;
+                top: 310px;
+
+                & h2, h3{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        & .product-card:visited{
+            color: black;
+        }
+    }
+}
+
+/* made with: https://www.cssportal.com/css-scrollbar-generator */
+*::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #e9e9e9e0;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #BDBDBD;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #7C7C7C;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #7C7C7C;
+}

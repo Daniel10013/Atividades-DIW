@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <title>Atividade Layout</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <h1>Guitar Heaven</h1>
+        <div>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre nós</a>
+            <button type="button" class="submitButton">Login</button>
+        </div>
+    </header>
+    <aside>
+        <section>
+            <h1>Marcas</h1>
+            <div>      
+                <a href="">Gibson</a>
+                <a href="">Fender</a>
+                <a href="">Yamaha</a>
+                <a href="">Tagima</a>
+                <a href="">Solar</a>
+                <a href="">Jackson</a>
+                <a href="">Ibanez</a>
+            </div>
+        </section>
+        
+        <section class="newsletter-form">
+            <h1>Assine nossa Newsletter</h1>
+            <h2>Recebas as notícias e novidades da loja!</h2>
+            <form action="">
+                <input type="text" placeholder="Nome:" name="nome">
+                <input type="mail" placeholder="Digite seu e-mail:" name="email">
+                <button type="button" class="submitButton" id="newsletterButton">Assinar</button>
+            </form>
+        </section>
+    </aside>
+    <main>
+        <h1>Aqui você encontra as melhores guitarras!</h1>
+        <div>
+            <input type="text" placeholder="Encontre a guitarra dos seus sonhos!" title="Não funciona, só coloquei pra ficar bonito XD">
+            <button><img src="./images/search.png" alt="search"></button>
+        </div>
+        <section>
+            <a class="product-card" style="background-image: url('./images/guitars/yamahasg.webp');" href="#">
+                <div>
+                    <h2> Yamaha SG-2000</h2>
+                    <h3>1000 R$</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/fender-telecaster.webp');" href="#">
+                <div>
+                    <h2>Fender Telecaster</h2>
+                    <h3>1000 R$</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/randy-lespaul.jpg');" href="#">
+                <div>
+                    <h2>Gibson LesPaul</h2>
+                    <h3>Randy Rhoads Signature</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/randy-flying-v.webp');" href="#">
+                <div>
+                    <h2>Sandoval Flying V</h2>
+                    <h3>Randy Rhoads Signature</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/james-explorer.webp');" href="#">
+                <div>
+                    <h2>Lawrence Explorer</h2>
+                    <h3>James Hetfield Signature</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/brian-may.webp');" href="#">
+                <div>
+                    <h2>Red Special</h2>
+                    <h3>Brian May</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/jimmy-page-telecaster.jpg');" href="#">
+                <div>
+                    <h2>Fender Telecaster</h2>
+                    <h3>Jimmy Page Signature</h3>
+                </div>
+            </a>
+            <a class="product-card" style="background-image: url('./images/guitars/eric-clapton-sg.jpg');" href="#">
+                <div>
+                    <h2>Gibson SG</h2>
+                    <h3>Eric Clapton Signature</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
