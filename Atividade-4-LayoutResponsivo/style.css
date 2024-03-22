@@ -208,11 +208,9 @@ main{
     }
 
     #mobile{
-        animation: menuOpenAnimation 0.4s;
         width: 100%;
         background-color: rgb(121, 121, 121);
         position: absolute;
-        top: 60px;
         display: flex;
         flex-direction: column;
         z-index: +9;
