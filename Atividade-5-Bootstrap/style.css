@@ -1,0 +1,9 @@
+@media(max-width: 1375px){
+    main{
+        flex-direction: column !important;
+    }
+
+    #card-box{ 
+        align-items: center !important;
+    }
+}
