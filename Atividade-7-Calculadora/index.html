@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Atividade Calculadora</h1>
+    </header>
+    <main>
+        <section>
+            <fieldset class="media">
+                <legend>Caluladora de média</legend>
+                <input type="text" placeholder="Digite a nota 1">
+                <input type="text" placeholder="Digite a nota 2">
+                <input type="text" placeholder="Digite a nota 3">
+                <button type="button" class="calculate-media">Calcular</button>
+                <div class="result media hidden">
+                </div>  
+            </fieldset>
+        </section>
+        <section>
+            <fieldset class="calculadora">
+                <legend>Caluladora</legend>
+                <input type="text" placeholder="Digite o número 1">
+                <input type="text" placeholder="Digite o número 2">
+                <div class="calculate-options">
+                    <button>+</button>
+                    <button>-</button>
+                    <button>x</button>
+                    <button>/</button>
+                </div>
+                <div class="result calculate hidden">
+                </div>
+            </fieldset>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
