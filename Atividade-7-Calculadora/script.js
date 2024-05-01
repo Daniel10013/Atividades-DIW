@@ -1,5 +1,3 @@
-// document.querySelector(".error").classList.remove("error")
-
 let mediaButton = document.querySelector(".calculate-media");
 
 mediaButton.addEventListener("click", function(){
@@ -14,8 +12,13 @@ mediaButton.addEventListener("click", function(){
     })
 
     if(canCalculate == true){
-        console.log(this.innerHTML);
-        showResult(media, document.querySelector(".result.calculate"));
+        let sum = 0;
+        inputs.forEach(function(eachInput){
+            sum = sum + Number(eachInput.value);
+        });
+        console.log(sum);
+        let media = sum / 3;
+        showResult(media, document.querySelector(".result.media"));
     }
 });
 
@@ -63,7 +66,7 @@ function addReset(input, index, mediaOrCalculate){
         input.classList.remove("error");
         text = mediaOrCalculate == true ? "a nota" : "o número";
         input.placeholder = 'Digite ' + text + " " + (index + 1);
-    })
+    });
 }
 
 function showResult(result, resultElement){
