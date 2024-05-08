@@ -41,7 +41,7 @@ main{
         position: absolute;
         border: none;
         top: 4vh;
-        left: 0;
+        left: -1.5vw;
         gap: 30px;
         display: flex;
         flex-direction: column;
