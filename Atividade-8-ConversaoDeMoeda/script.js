@@ -1,8 +1,9 @@
-window.addEventListener("load", function(){
-    var audio = new Audio('./assets/sound/windows_boot_sound.mp3');
-    audio.play();
-})
+window.onload = playAudio();
 
+function playAudio(){
+    var audio = new Audio('./assets/sound/windows_boot_sound.mp3');
+    audio.play();  
+}
 
 function refreshTime() {
     var timeDisplay = document.getElementById("time");

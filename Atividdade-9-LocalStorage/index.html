@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/362ca63254.js" crossorigin="anonymous"></script>
+    <title>Atividade Local Storage</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <div class="loading">
+            <img src="https://media.tenor.com/t5DMW5PI8mgAAAAi/loading-green-loading.gif" alt="">
+        </div>
+        <section class="add-task">
+            <h1>Adicione uma nova tarefa</h1>
+            <div>
+                <input type="text" placeholder="Nome da tarefa" id="add-task-input">
+                <button type="button" id="add-task-button">Salvar</button>
+            </div>
+            <div class="input-message">
+                
+            </div>
+        </section>
+        <section class="list-tasks">
+            <div class="complete-tasks">
+                <h1>
+                    Tarefas Concluídas
+                </h1>
+                <div class="task-list">
+                    <div class="table-header">
+                        <div class="task-id">#ID</div>
+                        <div class="task-name">Nome</div>
+                        <div class="task-status">Status</div>
+                        <div class="task-actions">Ações</div>
+                    </div>
+                    <div class="nothing-here" style="display: none;">
+                        Nenhum conteúdo cadastrado ainda! :(
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+            <div class="uncomplete-tasks">
+                <h1>
+                    Tarefas Pendentes
+                </h1>
+                <div class="task-list">
+                    <div class="table-header">
+                        <div class="task-id">#ID</div>
+                        <div class="task-name">Nome</div>
+                        <div class="task-status">Status</div>
+                        <div class="task-actions">Ações</div>
+                    </div>
+                    <div class="nothing-here" style="display: none;">
+                        Nenhum conteúdo cadastrado ainda! :(
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
