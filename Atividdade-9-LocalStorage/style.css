@@ -92,14 +92,14 @@ main{
 
     & .list-tasks{
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
 
         & .complete-tasks, .uncomplete-tasks{
-            width: 100%;
+            min-width: 50%;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            padding: 20px;
             flex-direction: column;
             gap: 5px;
 
@@ -109,7 +109,7 @@ main{
             }
 
             & .task-list{
-                width: 90%;
+                width: 95%;
                 min-height: 25vh;
                 max-height: 50vh;
                 overflow-y: auto;
@@ -197,6 +197,39 @@ main{
     }
 }
 
+
+@media screen and (max-width: 1119px){
+    main{
+        & .add-task{
+            & h1{
+                font-weight: 600;
+                font-size: 26px;
+            }
+
+            & div{
+                width: 70%;
+    
+                & input{
+                    width: 70%;
+                }
+            }
+        }
+    
+        & .list-tasks{
+            & .complete-tasks, .uncomplete-tasks{
+                min-width: 100%;
+
+                & .task-list{
+                    width: 95%;
+
+                    & .nothing-here{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .not-done{
     color: rgb(187, 19, 19);
