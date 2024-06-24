@@ -1,0 +1,46 @@
+{
+    "friends": [
+        {
+            "id": "1",
+            "name": "Cristian",
+            "url_image": "img/cristian.png"
+        },
+        {
+            "id": "2",
+            "name": "Mauro Lucio",
+            "url_image": "img/mauro.png"
+        },
+        {
+            "id": "3",
+            "name": "Jesus",
+            "url_image": "https://i.pinimg.com/564x/5b/dd/7b/5bdd7bd54e78eff028dd6ae26c22b9de.jpg"
+        }
+    ],
+    "suggested_content": [
+        {
+            "id": "1",
+            "name": "Randy Rhoads",
+            "url_image": "https://cdn.mos.cms.futurecdn.net/uiZPrXbvVpaL2rkxJmGQuJ.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Joe Pass",
+            "url_image": "https://cdn.mos.cms.futurecdn.net/vTudEuPLJLVyDAJRxExjLm-1200-80.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Issei Noro",
+            "url_image": "https://www.bluenote.co.jp/jp/reports/01_JF.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Martin Miller",
+            "url_image": "https://cdn.mos.cms.futurecdn.net/8LnpTMK5hNXjuET7xRvR2C.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Brian May",
+            "url_image": "https://www.diariodocentrodomundo.com.br/?attachment_id=19707"
+        }
+    ]
+}
