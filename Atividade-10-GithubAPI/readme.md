@@ -6,7 +6,7 @@
 ```
 npm install
 ```
-#### Rode o projeto e acesse na url ```localhost:3000```
+#### Rode o projeto e acesse na url ```http://localhost:3000```
 ```
 npm start
 ```
